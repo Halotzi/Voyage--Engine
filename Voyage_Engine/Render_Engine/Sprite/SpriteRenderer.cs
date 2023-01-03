@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using Voyage_Engine.Game_Engine.GameObjectSystem;
+using Voyage_Engine.Game_Engine.ResourcesSystem;
 using Voyage_Engine.Rendere_Engine.RenderedObjects;
 
 namespace Voyage_Engine.Rendere_Engine.Sprite
@@ -15,7 +16,7 @@ namespace Voyage_Engine.Rendere_Engine.Sprite
         {
             try
             {
-                _sprite = Image.FromFile(Path);
+                _sprite = Resources.LoadImage(Path);
             }
             catch (Exception e)
             {

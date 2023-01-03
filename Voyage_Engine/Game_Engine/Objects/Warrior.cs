@@ -1,5 +1,6 @@
-﻿using Voyage_Engine.Console;
-using Voyage_Engine.Game_Engine.Assest.Sprites;
+﻿using System.Windows.Forms;
+using Voyage_Engine.Assest.Sprites;
+using Voyage_Engine.Console;
 using Voyage_Engine.Game_Engine.GameObjectSystem;
 
 namespace Voyage_Engine.Game_Engine.Objects
@@ -8,7 +9,7 @@ namespace Voyage_Engine.Game_Engine.Objects
     {
         public override void Start()
         {
-            Debug.Log(Name + " is in position " + Transform.Position + " and scale of " + Transform.Scale + " " + InstanceId);
+            Debug.Log(Application.StartupPath);
             AddComponent<WarriorSprite>();
             base.Start();
         }

@@ -3,7 +3,7 @@ using Voyage_Engine.Game_Engine.Objects;
 using Voyage_Engine.Game_Engine.SceneSystem;
 using Voyage_Engine.Rendere_Engine.Vector;
 
-namespace Voyage_Engine.Game_Engine.Assest.Scenes
+namespace Voyage_Engine.Assest.Scenes
 {
     public class MainScene : Scene
     {

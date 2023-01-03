@@ -41,9 +41,9 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Assets\Scenes\MainScene.cs" />
+        <Compile Include="Assets\Sprites\WarriorSprite.cs" />
         <Compile Include="Console\Debug.cs" />
-        <Compile Include="Game_Engine\Assets\Scenes\MainScene.cs" />
-        <Compile Include="Game_Engine\Assets\Sprites\WarriorSprite.cs" />
         <Compile Include="Game_Engine\ComponentSystem\Component.cs" />
         <Compile Include="Game_Engine\ComponentSystem\IComponent.cs" />
         <Compile Include="Game_Engine\Engine\InstanceIDGenerator.cs" />
@@ -71,7 +71,10 @@
       </EmbeddedResource>
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Game_Engine\Assets\Sprites\SpritesAssets\png-transparent-the-woman-warrior-female-woman-warrior-game-child-cg-artwork-thumbnail.png" />
+      <Folder Include="Resources" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Resources\Sprites\png-transparent-the-woman-warrior-female-woman-warrior-game-child-cg-artwork-thumbnail.png" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

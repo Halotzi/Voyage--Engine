@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Voyage_Engine.Game_Engine.Assest.Scenes;
+using System.Windows.Forms;
+using Voyage_Engine.Assest.Scenes;
 using Voyage_Engine.Game_Engine.InputSystem;
+using Voyage_Engine.Game_Engine.ResourcesSystem;
 using Voyage_Engine.Game_Engine.SceneSystem;
 using Voyage_Engine.Game_Engine.TransformSystem;
 using Voyage_Engine.Rendere_Engine;
@@ -12,7 +14,9 @@ namespace Voyage_Engine.Game_Engine.Engine
 {
     public class MainGameEngine
     {
-        public event Action OnEndUpdate; 
+        public event Action OnEndUpdate;
+
+        public static string MainPath => Application.StartupPath;
 
         private MainRenderEngine _mainRenderEngine;
         
@@ -28,6 +32,7 @@ namespace Voyage_Engine.Game_Engine.Engine
         {
             _mainRenderEngine = new MainRenderEngine(new Vector2(1000, 1000), "Voyage Engine");
             InputReceiver.Init(_mainRenderEngine.Window);
+            Resources.Init();
 
             _scenes = new List<Scene>();
             
