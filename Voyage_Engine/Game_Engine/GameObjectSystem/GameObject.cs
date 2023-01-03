@@ -14,6 +14,7 @@ namespace Voyage_Engine.Game_Engine.GameObjectSystem
         
         private List<IComponent> _components;
         
+        public List<IComponent> Components => _components;
         public string Name => _name;
         public Transform Transform => _transform;
         public bool IsActive => _isActive;
